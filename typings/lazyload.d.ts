@@ -17,9 +17,9 @@
     placeholder?: string;
 }
 interface ILazyLoad {
-    new (options?: ILazyLoadOptions);
-    update();
-    destroy();
-    handleScroll();
+    new (options?: ILazyLoadOptions): ILazyLoad;
+    update(): void;
+    destroy(): void;
+    handleScroll(): void;
 }
 declare var LazyLoad: ILazyLoad;
